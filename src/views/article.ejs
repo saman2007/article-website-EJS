@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./includes/head.ejs") %> 
+  <body>
+    <div class="contentsContainer">
+        <%- include ("./includes/menu.ejs") %>
+        <div class="articleContainer">
+            <img src="<%= article.cover %>" alt="<%= article.coverAlt %>" class="cover">
+            <h1 class="articleTitle"><%= article.title %></h1>
+            <p class="articleTxt"><%= article.text %></p>
+            <p class="releasDate">releas date: <%= article.date %></p>
+        </div>
+    </div>
+    <%- include ("./includes/footer.ejs") %> 
+  </body>
+</html>

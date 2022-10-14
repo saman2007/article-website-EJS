@@ -1,0 +1,76 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 21, 21);
+    padding: 10px;
+}
+
+.footerTxt {
+    color: #fff;
+    font-size: 22px;
+}
+
+.menu {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.menuItem {
+    color: rgb(255, 121, 121);
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.menuItem:first-child {
+    margin-left: 0;
+}
+
+.menuItemSelect {
+    color: rgb(255, 21, 21);
+}
+
+.title {
+    color: rgb(255, 21, 21);
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.contentsContainer {
+    width: 100%;
+    flex-grow: 1;
+}
+
+@media (min-width: 1400px) {
+    body {
+        width: 1400px;
+        margin: auto;
+    }
+}

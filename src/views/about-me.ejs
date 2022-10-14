@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./includes/head.ejs") %> 
+  <body>
+    <div class="contentsContainer">
+        <%- include ("./includes/menu.ejs") %>
+        <div class="aboutContainer">
+            <h1 class="title">about me</h1>
+            <p class="aboutMeTxt"><%= text %> </p>
+            <p class="contactWays">you can contact me with these ways: </p>
+            <p class="contact">phone: <%= phone %></p>
+            <p class="contact">email: <%= phone %></p>
+            <a href="<%= github %>" class="contact">github: <% github %></a>
+        </div>
+    </div>
+    <%- include ("./includes/footer.ejs") %> 
+  </body>
+</html>

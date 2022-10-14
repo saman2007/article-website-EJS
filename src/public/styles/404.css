@@ -1,0 +1,20 @@
+.errorContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+.error {
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    margin-bottom: 10px;
+}
+
+.describe {
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}

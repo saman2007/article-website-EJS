@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./includes/head.ejs") %> 
+  <body>
+    <div class="contentsContainer">
+        <%- include ("./includes/menu.ejs") %>
+        <h1 class="title">articles</h1>
+        <div class="articleContainer">
+        <% articles.forEach(article => { %>
+            <%- include ("./includes/article.ejs", {article}) %> 
+        <% }) %>
+    </div>
+    </div>
+    <%- include ("./includes/footer.ejs") %> 
+  </body>
+</html>

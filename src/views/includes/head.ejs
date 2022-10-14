@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/template.css" />
+    <% if (url === "/" || url === "/articles") { %>
+        <link rel="stylesheet" href="/styles/index.css" />
+    <% } else if(url === "/not-found") { %>
+        <link rel="stylesheet" href="/styles/404.css" />
+    <% } else if(url === "/about-me") { %>
+        <link rel="stylesheet" href="/styles/aboutMe.css" />    
+    <% } else if(url === "/articles/:path") { %>
+        <link rel="stylesheet" href="/styles/article.css" />    
+    <% } %>   
+</head>

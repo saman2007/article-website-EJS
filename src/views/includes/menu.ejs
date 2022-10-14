@@ -1,0 +1,5 @@
+<nav class="menu">
+    <% for( let item of menu ) { %>
+        <a href=<%= item.href %> class="<% if (item.href === url) { %><%= "menuItem menuItemSelect" %><% } else { %><%= "menuItem" %><% } %> "><%= item.title %></a>
+    <% } %>
+</nav>

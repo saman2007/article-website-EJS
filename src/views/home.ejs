@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./includes/head.ejs") %> 
+  <body>
+    <div class="contentsContainer">
+        <%- include ("./includes/menu.ejs") %> 
+        <h1 class="title">newest articles</h1>
+        <div class="articleContainer">        
+            <% articles.forEach(article => { %>
+                <%- include ("./includes/article.ejs", {article}) %> 
+            <% }) %>
+            <div class="displayAllArticlesContainer">
+                <a href="/articles" class="seeAllArticles">see all articles</a>
+            </div>
+        </div>
+    </div>
+    <%- include ("./includes/footer.ejs") %> 
+  </body>
+</html>
